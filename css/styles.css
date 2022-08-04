@@ -501,11 +501,6 @@ p {
   align-items: baseline;
 }
 
-.footer-left {
-  display: flex;
-  flex-direction: column;
-}
-
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -558,9 +553,7 @@ p {
 }
 
 .footer-right {
-  display: flex;
-  flex-direction: column;
-  margin-left: 70px;
+ margin-left: 70px;
 }
 
 .footer-list {
@@ -738,15 +731,12 @@ p {
 }
 
 .footer-subscribe {
-  margin-left: 93px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  margin-left: auto;
 }
 
 .footer-subscribe-form {
   display: flex;
+  align-items: center;
 }
 
 .footer-subscribe-title {
@@ -783,10 +773,13 @@ p {
   justify-content: center;
   margin-left: 12px;
   width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 }
 
 .subscribe-button-text {
@@ -933,11 +926,9 @@ justify-content: center; */
 
 .register-form-icon {
   position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 11px;
-  margin-bottom: 12px;
-  margin-left: 12px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: var(--main-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -968,8 +959,7 @@ justify-content: center; */
   text-align: center;
 
   padding: 10px 52px;
-  margin-bottom: 40px;
-
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
